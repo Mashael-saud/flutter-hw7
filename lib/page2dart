@@ -1,0 +1,225 @@
+import 'package:flutter/material.dart';
+
+class MyPage2 extends StatelessWidget {
+  const MyPage2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        body: Stack(
+          children: [
+            Image.asset(
+              'Assets/images/img2.jpg',
+              height: 1000,
+              fit: BoxFit.cover,
+            ),
+            Positioned(
+              bottom: 0,
+              child: Container(
+                height: 1700,
+                width: 1600,
+                decoration: const BoxDecoration(
+                    gradient: LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
+                  Color(0xff517AB5),
+                  Colors.transparent,
+                ])),
+              ),
+            ),
+            Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              const Padding(
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  'What brings you to Clam?',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              const Text(
+                'Select your primary reason.',
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const SizedBox(
+                height: 35,
+              ),
+              Column(
+                children: [
+                  Container(
+                    height: 80,
+                    width: 410,
+                    decoration: BoxDecoration(
+                        color: const Color(0xfff3b5689).withOpacity(0.9),
+                        borderRadius: const BorderRadius.all(Radius.circular(30))),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: const [
+                        SizedBox(
+                          width: 10,
+                        ),
+                        SizedBox(
+                          height: 85,
+                          width: 85,
+                          child: Image(
+                            image: AssetImage('Assets/images/pic1.png'),
+                          ),
+                        ),
+                        Text(
+                          'Improve Your Sleep',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              Column(
+                children: [
+                  Container(
+                    height: 80,
+                    width: 410,
+                    decoration: BoxDecoration(
+                        color: const Color(0xfff3a5588).withOpacity(0.9),
+                        borderRadius: const BorderRadius.all(Radius.circular(30))),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: const [
+                        SizedBox(
+                          width: 10,
+                        ),
+                        SizedBox(
+                          width: 85,
+                          height: 85,
+                          child: Image(
+                            image: AssetImage('Assets/images/pic2.png'),
+                          ),
+                        ),
+                        Text(
+                          'Manage Stress or Anxiety',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              Column(
+                children: [
+                  Container(
+                    height: 80,
+                    width: 410,
+                    decoration: BoxDecoration(
+                        color: const Color(0xfff3c5186).withOpacity(0.9),
+                        borderRadius: const BorderRadius.all(Radius.circular(30))),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: const [
+                        SizedBox(
+                          width: 10,
+                        ),
+                        SizedBox(
+                          height: 85,
+                          width: 85,
+                          child: Image(
+                            image: AssetImage('Assets/images/pic3.png'),
+                          ),
+                        ),
+                        Text(
+                          'Learn to Meditate',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              Column(
+                children: [
+                  Container(
+                    height: 80,
+                    width: 410,
+                    decoration: BoxDecoration(
+                        color: const Color(0xfff35497f).withOpacity(0.9),
+                        borderRadius: const BorderRadius.all(Radius.circular(30))),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: const [
+                        SizedBox(
+                          width: 10,
+                        ),
+                        SizedBox(
+                          height: 85,
+                          width: 85,
+                          child: Image(
+                            image: AssetImage('Assets/images/pic4.png'),
+                          ),
+                        ),
+                        Text(
+                          'Invest in Personal Growth',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              Column(
+                children: [
+                  Container(
+                    height: 80,
+                    width: 410,
+                    decoration: BoxDecoration(
+                        color: const Color(0xfff334377).withOpacity(0.9),
+                        borderRadius: const BorderRadius.all(Radius.circular(30))),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: const [
+                        SizedBox(
+                          width: 10,
+                        ),
+                        SizedBox(
+                          height: 85,
+                          width: 85,
+                          child: Image(
+                            image: AssetImage('Assets/images/pic5.png'),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          'Something Else',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ]),
+          ],
+        ),
+      ),
+    );
+  }
+}
